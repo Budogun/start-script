@@ -4,7 +4,7 @@ echo "deb http://deb.debian.org/debian buster-backports main" >> /etc/apt/source
 fi
 apt update
 apt upgrade -y
-apt install -y apache2 python openssh-server vsftpd
+apt install -y apache2 python openssh-server vsftpd mc
 systemctl start apache2
 systemctl start sshd
 systemctl enable sshd
